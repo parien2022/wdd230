@@ -1,0 +1,42 @@
+@media only screen and (min-width: 60em){  
+    
+    main{
+        max-width: 900px;
+        
+    }
+
+    .main-header{
+        font-size: 20px;
+        max-width: 880px;
+    }
+
+    .grid-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .first{
+        grid-column: 1/2;
+    }
+
+    .second{
+        grid-column: 2/3;
+    }
+
+    .third{
+        grid-column: 3/4;
+    }
+
+    .sabre-img{
+        padding: 5px 5px 5px 6px;
+    }
+
+    section{
+        margin: 20px;
+        margin-top: 0;
+    }
+    
+    .main-footer{
+        max-width: 890px;
+    }
+
+}
