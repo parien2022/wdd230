@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Sarabun:ital,wght@1,300&display=swap');
+
+body {
+    margin: 0 auto;
+    width: 450px;
+    font-family: 'Didact Gothic', 'Sarabun', sans-serif;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 125px 1fr;
+    grid-template-rows: 1fr;
+    border-radius: 8px;
+    justify-items: center;
+    text-align: center;
+    background-color: rgb(183, 228, 246);
+    padding: 10px;
+}
+
+main{
+    color: rgb(8, 8, 129);
+    padding: 10px;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(183, 228, 246);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+img{
+    width: 100px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-radius: 10px;
+    border: 2px solid rgb(73, 138, 212);
+    box-shadow: 5px 2px 2px rgb(73, 138, 212) ;
+}
+
+h1{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 20px;
+    color: rgb(4, 4, 104);
+}
+
+h2 {
+    box-shadow: 0px 2px 2px rgb(37, 37, 175) ;
+}
+
+hr {
+    background-color:rgb(37, 37, 175);
+}
+
+p{
+    color: rgb(4, 4, 104);
+    margin: 0;
+}
