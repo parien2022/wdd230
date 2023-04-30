@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Sarabun:ital,wght@1,300&display=swap');
+body{
+    margin: 0 auto;
+    width: 95%;
+    padding: 10px;
+    font-family: 'Didact Gothic', 'Sarabun', sans-serif;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+}
+
+header{
+    background-color: rgb(4, 62, 81);
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px;
+    color: white;
+}
+
+h2{
+    font-size: 20px;
+    background-color: rgb(6, 34, 78);
+    margin: 0;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+#white_space{
+    border-radius: 10px;
+    border: 5px rgb(105, 228, 105);
+    background-color: antiquewhite;
+    margin: 10px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#alignment{
+    border-radius: 10px;
+    border: 5px rgb(105, 228, 105);
+    background-color: antiquewhite;
+    margin: 10px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#contrast{
+    border-radius: 10px;
+    border: 5px rgb(105, 228, 105);
+    background-color: antiquewhite;
+    margin: 10px;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+footer{
+    background-color: rgb(4, 62, 81);
+    text-align: center;
+    padding: 20px 5px 5px 5px;
+    border-radius: 10px;
+    margin: 10px;
+    color: white;
+    height: 40px;
+}
+
+
+img{
+    width: 94%;
+    border-radius: 20px;
+    padding: 10px;
+    object-fit: contain;
+}
+
+a{
+    padding: 10px;
+}
+
+p{
+    padding: 10px;
+}
+
+h1{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+
+

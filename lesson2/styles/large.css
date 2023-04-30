@@ -1,0 +1,21 @@
+@media only screen and (min-width: 60em){
+    body{
+        width: 1000px;
+    }
+    
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: 1000px;
+    }
+    
+    #contrast{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    #img3{
+        width: 94%;
+    }
+}

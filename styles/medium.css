@@ -1,0 +1,27 @@
+@media only screen and (min-width: 32.5em){
+
+    body {
+        width: 450px;
+    }
+
+    header{
+        grid-template-columns: 125px 1fr;
+        grid-template-rows: 1fr;
+        border-radius: 8px;
+    }
+
+    img{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    h1{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    footer{
+        border-radius: 8px;
+    }
+
+}
