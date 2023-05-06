@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Sarabun:ital,wght@1,300&display=swap');
+
+body{
+    margin: 0 auto;
+    padding: 15px;
+    font-family: 'Didact Gothic', 'Sarabun', sans-serif;
+}
+
+header{
+    display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding: .75rem;
+}
+
+nav{
+    padding: 10px;
+}
+
+.main-nav-ul{
+    padding: 0px;
+}
+
+.main-nav-li{
+    display: flex;
+    align-items: center;
+	justify-content: center;
+    flex-flow: column;
+    margin: 0px;
+    padding: 10px;
+    flex-grow: 1;
+    border-bottom: 2px solid rgba(3, 54, 126, 0.2);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(34, 42, 93);
+}
+
+main{
+    background-color: rgb(34, 42, 93);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.back-section{
+    margin: 0% 18% 0%;
+    max-width: 900px;
+    color: white;
+    padding: 2%;
+    font-size: 20px;
+    background-color: #0A6675;
+    border-radius: 10px;
+}
+
+
+.color-palette{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.color-box{
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    padding: 6px;
+    border-radius: 10px;
+}
+#color-1{background-color: #222a5d;}
+#color-2{background-color: #0A6675;}
+#color-3{background-color: #065143;}
+#color-4{background-color: #896244;}
+#color-5{background-color: #ffffff; color: #0A6675;}
+
+
+
