@@ -28,14 +28,14 @@ img{
 .facebook{
     display: block;
     position: absolute;
-    transform: translate(-50%, -20%);
+    transform: translate(-50%, -71%);
     width: 40px;
 }
 
 .linkedin{
     display: block;
     position: absolute;
-    transform: translate(80%, -15%);
+    transform: translate(80%, -75%);
     width: 35px;
 }
 
@@ -48,7 +48,7 @@ h3 {
 
 
 nav{
-    margin-top: 0px;
+    margin-top: 25px;
     padding: 15px;
     width: 90%;
 }
