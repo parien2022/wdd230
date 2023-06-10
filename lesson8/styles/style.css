@@ -53,3 +53,9 @@ tbody{
     font-size: 25px;
 }
 
+caption{
+    padding: 10px;
+    caption-side: bottom;
+    font-size: 15px;
+}
+
