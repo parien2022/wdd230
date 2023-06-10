@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Sarabun:ital,wght@1,300&display=swap');
+
+body {
+    font-family: 'Didact Gothic', 'Sarabun', sans-serif;
+}
+
+:root{
+    --thBorder: black;
+    --tbborder: grey;
+    --thbackground: rgb(27, 55, 86);
+    --gap : white;
+    --tbackground: beige;
+}
+
+
+
+main{
+    margin: 0 auto;
+    width: 90%
+}
+
+table{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 700px;
+    padding: 5px;
+    border-collapse: collapse;
+}
+
+thead{
+    background-color: var(--thbackground);
+    border: 2px solid var(--thBorder);
+    padding: 5px;
+    color: var(--gap);
+}
+
+th{
+    font-size: 20px;
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 7px solid var(--gap);
+}
+
+tbody{
+    text-align: center;
+    background-color: var(--tbackground);
+    border: 2px solid var(--tbborder);
+}
+
+#th-title{
+    font-size: 25px;
+}
+
