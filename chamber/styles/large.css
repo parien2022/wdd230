@@ -40,7 +40,7 @@ h3 {
 .container {
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: repeat(3, 1fr);
-    height: 70rem;
+    
     width: 90%;
     margin: 0 auto;
 }
@@ -82,12 +82,19 @@ h3 {
 }
 
 footer{
-    width: 90%;
+    width: 92%;
 }
 
 #footer-img{
     width: 35%;
 }
+
+.label-overlay.large {
+    display: block;
+  }
+  .label-overlay.medium {
+    display: none;
+  }
 
 }
 

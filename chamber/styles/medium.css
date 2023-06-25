@@ -59,4 +59,16 @@
         width: 60%;
     }
 
+    footer{
+        width: 98%;
+    }
+
+    .label-overlay.medium {
+        display: block;
+      }
+      .label-overlay.small {
+        display: none;
+      }
+    
+
 }

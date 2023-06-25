@@ -44,6 +44,8 @@ const options2 = {
   threshold: 0.5
 };
 
+
+
 const handleIntersection = (entries, observer) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -57,10 +59,35 @@ const handleIntersection = (entries, observer) => {
       }
     }
   })
-}
+} 
 
 const observer = new IntersectionObserver(handleIntersection, options2);
 
 images.forEach(img => {
   observer.observe(img);
 });
+
+
+/*const handleIntersection = (entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const element = entry.target;
+      const src = element.getAttribute("data-src");
+
+      if (src) {
+        if (element.tagName === "IMG") {
+          element.src = src;
+        } else if (element.tagName === "SOURCE") {
+          element.srcset = src;
+          const title = element.getAttribute("title");
+          element.parentElement.title = title;
+        }
+
+        element.classList.add("loaded");
+        observer.unobserve(element);
+      }
+    }
+  })
+}*/
+
+
