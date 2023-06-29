@@ -63,12 +63,15 @@
         width: 98%;
     }
 
-    .label-overlay.medium {
-        display: block;
-      }
-      .label-overlay.small {
-        display: none;
-      }
-    
+    #img-spotlights1{
+        height: 100%;
+        width: 100%;
+    }
+    #img-spotlights2{
+        height: 100%;
+        width: 100%;
+    }
+   
+
 
 }

@@ -36,10 +36,14 @@ h3 {
     display: none;
 }
 
+#welcome-title{
+    display: block;
+}
+
 
 .container {
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 0.2fr 1fr 0.5fr;
     
     width: 90%;
     margin: 0 auto;
@@ -50,6 +54,11 @@ h3 {
     grid-column: 2/3;
 }
 
+#hero-img{
+    width: 100%;
+    height: 100%;
+}
+
 #new-release{
     grid-row: 3/4;
     grid-column: 2/3;
@@ -57,6 +66,9 @@ h3 {
 
 #spotlight-3{
     display: block;
+    position: relative;
+    padding: 0px;
+    max-width: 100%;
 }
 
 #spotlight{
@@ -89,12 +101,11 @@ footer{
     width: 35%;
 }
 
-.label-overlay.large {
-    display: block;
-  }
-  .label-overlay.medium {
-    display: none;
-  }
-
+#img-spotlights3{
+    height: 100%;
+    width: 100%;
 }
 
+
+
+}

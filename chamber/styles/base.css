@@ -2,7 +2,7 @@
 
 body{
     margin: 0 auto;
-    padding: 15px;
+    padding: 35px;
     font-family: 'Didact Gothic', 'Sarabun', sans-serif;
 }
 
@@ -17,11 +17,12 @@ header{
 img{
     border-radius: 7px;
     max-width: 100%;
-    transition: opacity 0.5s;
+    transition: opacity 1s ease-in-out;
     opacity: 0;
+    object-fit: cover;
 }
 
-img.loaded{
+img.loaded {
     opacity: 1;
 }
 
@@ -118,16 +119,18 @@ a{
     margin: 0px 5px 20px 30px;
     padding: 5px;
     border-radius: 5px;
+    border: 5px solid #065143;
 
 }
 
 .container {
     padding: 10px;
     display: grid;
-    max-height: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.3fr 0.5fr 0.5fr 0.5fr;
     gap: 5px;
+    text-align: center;
+    background-color: #896244;
 }
 
 div {
@@ -141,7 +144,7 @@ div {
 #spotlight{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 0.5fr 0.5fr;
     padding: 10px;
     gap: 5px;
 }
@@ -149,11 +152,6 @@ div {
 #join{
     display: none;
 }
-#spotlight-3{
-    display: none;
-}
-
-
 
 footer{
     margin: 0 auto;
@@ -174,6 +172,7 @@ footer{
     place-items: center;
     justify-content: center;
     align-items: center;
+    border: 5px solid #065143;
 }
 
 .copy{
@@ -185,17 +184,6 @@ footer{
     position: relative;
 }
 
-#main_img_large{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-}
-
-img.loaded {
-    opacity: 1;
-}
-
 #welcome-title{
     position: absolute;
     padding: 5px 10px;
@@ -204,21 +192,6 @@ img.loaded {
     background-color: rgba(0, 0, 0, 0.7);;
     color: #ffffff;
 }
-
-.label-overlay{
-    position: absolute;
-    top: 5rem;
-    left: 10px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    padding: 5px 10px;
-    font-size: 14px;
-    display: none;
-  }
-
-  .label-overlay.small {
-    display: block;
-  }
 
 #weather{
     text-align: center;
@@ -266,10 +239,89 @@ img.loaded {
 }
 
 #spotlight-1{
+    position: relative;
+    padding: 0px;
+    max-width: 100%;
+}
+#spotlight-2{
+    position: relative;
+    padding: 0px;
+    max-width: 100%;
+}
+#spotlight-3{
+    display: none;
+    padding: 0px;
+} 
+
+.spotlight-text{
+    position: absolute;
+    padding: 5px 10px;
+    top: 0rem;
+    left: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+#discover-main{
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.discover-img-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    max-width: 750px;
+    text-align: center;
+    margin: 30px 0px 30px;
+    
+}
+
+.discover-img-container:hover{
+    transform: scale(1.1);
+}
+
+#discover-title-container{
+    background-color: white;
+    margin: 60px 0px 0px;
+}
+#discover-title{
+    color: black;
+}
+
+#line{
+    background-color: #896244;
+}
+
+#last-day{
+    background-color: #896244;
+}
+#storage-day{
+    margin: 0px;
     text-align: center;
 }
 
-#restaurant{
-    width: 100%;
+#city-data-container{
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.montevideo-data{
+    text-align: center;
+    color: black;
+}
+
+#arrow{
+    font-size: 4rem;
+    text-align: center;
+    color: black;
 }
 

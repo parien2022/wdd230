@@ -44,8 +44,6 @@ const options2 = {
   threshold: 0.5
 };
 
-
-
 const handleIntersection = (entries, observer) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -68,26 +66,16 @@ images.forEach(img => {
 });
 
 
-/*const handleIntersection = (entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const element = entry.target;
-      const src = element.getAttribute("data-src");
+const lastVisit = localStorage.getItem('lastVisit');
 
-      if (src) {
-        if (element.tagName === "IMG") {
-          element.src = src;
-        } else if (element.tagName === "SOURCE") {
-          element.srcset = src;
-          const title = element.getAttribute("title");
-          element.parentElement.title = title;
-        }
+if (lastVisit){
 
-        element.classList.add("loaded");
-        observer.unobserve(element);
-      }
-    }
-  })
-}*/
+  const timeDiff = Math.abs(date.getTime() - new Date(lastVisit).getTime());
+  const daysPassed = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
 
+  const dayElement = document.getElementById('storage-day');
+  dayElement.textContent = `Days since last visit: ${daysPassed}`
+}
+
+localStorage.setItem('lastVisit', date)
 
