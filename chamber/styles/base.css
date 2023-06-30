@@ -325,6 +325,13 @@ footer{
     color: black;
 }
 
+.thanks{
+    background-color: #896244;
+    width: 100%;
+    max-width: 60rem;
+    margin: 10rem 5rem 10rem 5rem;
+}
+
 /*---------FORM-------------------*/
 
 form fieldset{
