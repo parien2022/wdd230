@@ -2,8 +2,12 @@
 
 body{
     margin: 0 auto;
-    padding: 35px;
+    padding: 20px;
     font-family: 'Didact Gothic', 'Sarabun', sans-serif;
+}
+
+body.discover-body{
+    padding: 35px;
 }
 
 header{
@@ -327,9 +331,7 @@ footer{
 
 .thanks{
     background-color: #896244;
-    width: 100%;
-    max-width: 60rem;
-    margin: 10rem 5rem 10rem 5rem;
+    margin: 5rem 1rem 5rem 1rem;
 }
 
 /*---------FORM-------------------*/
