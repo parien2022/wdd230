@@ -77,5 +77,13 @@ if (lastVisit){
   dayElement.textContent = `Days since last visit: ${daysPassed}`
 }
 
-localStorage.setItem('lastVisit', date)
+localStorage.setItem('lastVisit', date);
+
+
+
+function addDateAndTime(){
+  const formDate = date.toISOString();
+  document.getElementById('formDate').value = formDate;
+}
+addDateAndTime()
 

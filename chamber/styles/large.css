@@ -106,6 +106,8 @@ footer{
     width: 100%;
 }
 
-
+form label.side{
+    display: inline;
+}
 
 }
