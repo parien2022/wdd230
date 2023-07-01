@@ -6,12 +6,12 @@ function calculateWindChill() {
     const temperature = parseFloat(tempInput.textContent);
     const windSpeed = parseFloat(windSpInput.textContent);
 
-  const temperatureInFar = temperature * (9/5) + 32
-  const windSpeedInMiles = windSpeed / 1.609
+  //const temperatureInFar = temperature * (9/5) + 32
+  //const windSpeedInMiles = windSpeed / 1.609
 
-  if (temperatureInFar <= 50 && windSpeedInMiles > 3.0){
+  if (temperature <= 50 && windSpeed > 3){
 
-    const windChill = performCalulation(temperatureInFar, windSpeedInMiles);
+    const windChill = performCalulation(temperature, windSpeed);
 
     document.getElementById('windchill').textContent = windChill.toFixed(2);
   } else {

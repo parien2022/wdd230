@@ -261,6 +261,11 @@ footer{
     box-sizing: border-box;
 }
 
+.discover-main{
+    margin: 0 auto;
+    max-width: 800px;
+}
+
 .center-main{
     margin: 0 auto;
     max-width: 1000px;
