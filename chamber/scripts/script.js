@@ -38,6 +38,7 @@ if (day == 'Monday' || day == 'Tuesday'){
     joinUs.style.display = "block";
 }
 
+
 const images = document.querySelectorAll("img");
 
 const options2 = {
@@ -61,12 +62,86 @@ const handleIntersection = (entries, observer) => {
 
 const observer = new IntersectionObserver(handleIntersection, options2);
 
-images.forEach(img => {
-  observer.observe(img);
-});
+  images.forEach(img => {
+    observer.observe(img);
+  });
 
 
-const lastVisit = localStorage.getItem('lastVisit');
+
+const path = 'json/data.json';
+const gridButton = document.getElementById("gridButton");
+const listButton = document.querySelector("#listButton");
+const articleContainer = document.querySelector("article");
+
+  async function createCompanyCards(path) {
+    const response = await fetch(path);
+    const data = await response.json();
+
+    displayCompanys(data.companys);
+  }
+  
+  createCompanyCards(path);
+
+
+  const displayCompanys = (companys) => {
+  
+    companys.forEach((company) => {
+    
+      let card = document.createElement('section');
+      let brand = document.createElement('img');
+      let h4 = document.createElement('h4');
+      let p1 = document.createElement('p');
+      let p2 = document.createElement('p');
+      let link = document.createElement('a');
+
+      brand.setAttribute('data-src', `images/${company.image}`);
+      brand.setAttribute('alt', `card of ${company.name}`);
+      brand.classList.add("directory-img");
+      
+      h4.textContent = company.name
+      p1.textContent = company.address
+      p2.textContent = company.phone
+      link.setAttribute('href', company.website)
+      link.textContent = `${company.name} Web Site`
+      
+      card.appendChild(brand);
+      card.appendChild(h4);
+      card.appendChild(p1);
+      card.appendChild(p2);
+      card.appendChild(link);
+
+      articleContainer.appendChild(card);
+  });
+
+  const companyImages = document.querySelectorAll("img");
+
+  const observerCompanys = new IntersectionObserver(handleIntersection, options2);
+
+  companyImages.forEach(img => {
+    observerCompanys.observe(img);
+  });
+
+  }
+
+  gridButton.addEventListener('click', () => {
+    articleContainer.classList.add("grid");
+    articleContainer.classList.remove("list");
+  })
+
+  listButton.addEventListener('click', () => {
+    articleContainer.classList.add("list");
+    articleContainer.classList.remove("grid");
+  })
+
+
+
+
+
+
+
+
+
+/*const lastVisit = localStorage.getItem('lastVisit');
 
 if (lastVisit){
 
@@ -85,5 +160,8 @@ function addDateAndTime(){
   const formDate = date.toISOString();
   document.getElementById('formDate').value = formDate;
 }
-addDateAndTime()
+addDateAndTime()*/
+
+
+
 

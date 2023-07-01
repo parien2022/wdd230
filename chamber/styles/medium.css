@@ -71,7 +71,15 @@
         height: 100%;
         width: 100%;
     }
-   
+
+    .grid{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: none;
+    }
+
+    .list section{
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
 
 
 }

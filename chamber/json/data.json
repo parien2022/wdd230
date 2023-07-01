@@ -1,0 +1,76 @@
+{
+    "companys": [
+        {
+            "name": "Verifone",
+            "address": "Zona America 5687",
+            "phone": "123456789",
+            "website": "https://www.verifone.com/en/global",
+            "image": "verifone_icon.png",
+            "membership_level": "Gold"
+        },
+        {
+            "name": "Sabre",
+            "address": "Zona America 8213",
+            "phone": "4859962137",
+            "website": "https://www.sabre.com/",
+            "image": "sabre_icon.png",
+            "membership_level": "Gold"
+        },
+        {
+            "name": "Trafilea",
+            "address": "Zona America 7854",
+            "phone": "8712684535",
+            "website": "https://www.trafilea.com/",
+            "image": "trafilea_icon.png",
+            "membership_level": "Gold"
+        },
+        {
+            "name": "Pedidos Ya",
+            "address": "Av. Republica 4589",
+            "phone": "987654321",
+            "website": "https://www.pedidosya.com.uy/",
+            "image": "pedidosya_icon.png",
+            "membership_level": "Silver"
+        },
+        {
+            "name": "Globant",
+            "address": "Av. Ramirez 4856",
+            "phone": "215854792",
+            "website": "https://www.globant.com/",
+            "image": "globant_icon.png",
+            "membership_level": "Silver"
+        },
+        {
+            "name": "Intermedia",
+            "address": "Av. Ricaldoni 6584",
+            "phone": "1845688155",
+            "website": "https://intermediasoftware.com/es",
+            "image": "intermedia_icon.png",
+            "membership_level": "Bronze"
+        },
+        {
+            "name": "EGA",
+            "address": "Av. Napoli 2145",
+            "phone": "52148937",
+            "website": "https://www.ega.com.uy/",
+            "image": "ega_icon.png",
+            "membership_level": "Bronze"
+        },
+        {
+            "name": "Abitab",
+            "address": "Av. Nacional 6325",
+            "phone": "203258465",
+            "website": "https://www.abitab.com.uy/",
+            "image": "abitab_icon.png",
+            "membership_level": "none"
+        },
+        {
+            "name": "Geocom",
+            "address": "Av. Garibaldi 4859",
+            "phone": "89214576215",
+            "website": "https://www.geocom.com.uy/",
+            "image": "geocom_icon.png",
+            "membership_level": "none"
+        }
+    ]
+}
