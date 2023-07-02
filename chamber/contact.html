@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Chamber Commerce Site"/>
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/medium.css"/>
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="icon" href="favicon.ico">
+        <title>Uruguayan Chamber of commerce</title>
+    </head>
+    <body>
+        <header>
+            <img src="#" data-src="images/logo_image.webp" alt="Logo image"/>
+            <nav>
+                <div id="menu">
+                    <a id="afacebook" href="https://www.facebook.com" target="_blank"><img class="facebook" src="#" data-src="images/facebook.png" alt="Facebook icon"></a>
+                    <a id="alinkedin" href="https://www.linkedin.com" target="_blank"><img class="linkedin" src="#" data-src="images/linkedin.png" alt="Linkedin icon"></a>
+                    <button id="button">&#9776;</button>
+                </div>
+                <ul class="nav-ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a target="_blank" href="discover.html">Discover</a></li>
+                    <li><a target="_blank" href="join.html">Join</a></li>
+                    <li><a target="_blank" href="directory.html">Directory</a></li>
+                    <li><a target="_blank" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <p id="date"></p>
+        </header>
+        <main class="contact-main">
+            <h1>Contact Section</h1>
+
+            <div>
+                <h2 class="contact-info">-------General information-------</h2>
+                <p>The creation of the Uruguayan Chamber of Commerce marks an important milestone in the economic development of the Montevideo city. By bringing together diverse businesses and fostering collaboration, the chamber strives to create a thriving business community that contributes to the prosperity and progress of Montevideo, making it an attractive destination for local and international investment.</p>
+            </div>
+            <div>
+                <h2 class="contact-info">-------Visit Us-------</h2>
+                <p>Uruguayan Chamber of Commerce</p>
+                <p>Address: Av. Carrasco, Montevideo, 11200, Uruguay</p>
+                <h4>Office Hours</h4>
+                <p>Monday to Friday: 9:00 AM to 6:00 PM</p>
+                <p>Saturday: Closed</p>
+                <p>Sunday: Closed</p>
+            </div>
+            <div>
+                <h2 class="contact-info">---------Points of contact-------</h2>
+                <p>Phone: +59894258941</p>
+                <p>Email: uruguayanchamber@gmail.com</p>
+            </div>
+
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Contact information</legend>
+                    <label class="top">First Name*<input type="text" name="fname" required></label>
+                    <label class="top">Last Name*<input type="text" name="lname" required></label>
+                    <label class="top">Organization*<input type="text" name="organization" pattern="^[a-zA-Z- ]" required></label>
+                    <label class="top">Email*<input type="email" name="email" placeholder="name@gmail.com" required></label>
+                    <label class="top">Cell Phone Number*<input type="tel" name="cell" required></label>
+                    <label class="top">City<input type="text" name="city"></label>
+                    <label class="top">State<input type="text" name="State"></label>
+                    <label class="top">Comments/Questions<textarea name="comments"></textarea>
+                </fieldset>
+                <label><input class="submitButton" type="submit" name="submitButton" value="Send Contact Info"></label>
+            </form>
+            
+        </main>
+        <footer>
+            <div id="info-footer">
+                <img id="footer-img" src="#" data-src="images/Uruguayan1.png" alt="Logo image"/>
+                <p>info@uruguayanchamber.org <br> +(123) 1234-5678 <br> &#x1F4CD; Location Map</p>
+            </div>
+            
+
+            <hr>
+
+            <p class="copy">&copy Uruguayan Chamber | Agustin Pariente | WDD 230 Project | Last modification: <span id="LastModification"></span></p>
+        </footer>
+
+    </body>
+    <script src="scripts/script.js"></script>
+</html>

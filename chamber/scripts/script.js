@@ -233,6 +233,92 @@ function addDateAndTime(){
 }
 addDateAndTime()
 
+function getRandom(){
+  try {
+    const memberLevel = ['gold', 'silver', 'bronze', 'basic'];
+    const randomLevel = Math.floor(Math.random() * memberLevel.length);
+    return memberLevel[randomLevel];
+  } catch (error) {
+  }
+}
 
 
 
+function getCompanySpotlights(){
+
+  try {
+    const path = 'json/data.json';
+    const spot = document.getElementById("spotlight");
+    const member = document.getElementById("member-info")
+
+      async function createCompanyCards(path) {
+        const response = await fetch(path);
+        const data = await response.json();
+
+        displayCompanys(data.companys);
+      }
+      
+      createCompanyCards(path);
+
+      const randomLevel = getRandom()
+      const displayCompanys = (companys) => {
+
+        let count = 0
+      
+        companys.forEach((company) => {
+          
+          try {
+
+          if(company.membership_level == randomLevel){
+            let card = document.createElement('div');
+            let brand = document.createElement('img');
+            let h4 = document.createElement('h4');
+            let p1 = document.createElement('p');
+            let p2 = document.createElement('p');
+            let link = document.createElement('a');
+
+            card.setAttribute('id', `spotlight-sec-${count}`)
+            card.classList.add(`styled-${randomLevel}`)
+            member.innerHTML = `<strong>Now you are signed in as a ${randomLevel} user</strong>`
+            member.classList.add(`styled-member-${randomLevel}`)
+
+            brand.setAttribute('data-src', `images/${company.image}`);
+            brand.setAttribute('alt', `card of ${company.name}`);
+            brand.classList.add("directory-img");
+            
+            h4.textContent = company.name
+            p1.textContent = company.address
+            p2.textContent = company.phone
+            link.setAttribute('href', company.website)
+            link.classList.add('styled-link');
+            link.textContent = `${company.name} Web Site`
+            
+            card.appendChild(brand);
+            card.appendChild(h4);
+            card.appendChild(p1);
+            card.appendChild(p2);
+            card.appendChild(link);
+
+            spot.appendChild(card);
+
+            count ++;
+          }
+          
+          
+          } catch (error) {
+          }
+      });
+
+      const companyImages = document.querySelectorAll("img");
+
+      const observerCompanys = new IntersectionObserver(handleIntersection, options2);
+
+      companyImages.forEach(img => {
+        observerCompanys.observe(img);
+      });
+
+      }
+  } catch (error) {
+  }
+}  
+getCompanySpotlights()

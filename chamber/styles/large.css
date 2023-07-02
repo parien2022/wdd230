@@ -109,4 +109,8 @@ footer{
 form label.side{
     display: inline;
 }
+
+#spotlight-sec-2{
+    display: block;
+}
 }

@@ -6,7 +6,7 @@
             "phone": "123456789",
             "website": "https://www.verifone.com/en/global",
             "image": "verifone_icon.png",
-            "membership_level": "Gold"
+            "membership_level": "gold"
         },
         {
             "name": "Sabre",
@@ -14,7 +14,7 @@
             "phone": "4859962137",
             "website": "https://www.sabre.com/",
             "image": "sabre_icon.png",
-            "membership_level": "Gold"
+            "membership_level": "gold"
         },
         {
             "name": "Trafilea",
@@ -22,7 +22,7 @@
             "phone": "8712684535",
             "website": "https://www.trafilea.com/",
             "image": "trafilea_icon.png",
-            "membership_level": "Gold"
+            "membership_level": "gold"
         },
         {
             "name": "Pedidos Ya",
@@ -30,7 +30,7 @@
             "phone": "987654321",
             "website": "https://www.pedidosya.com.uy/",
             "image": "pedidosya_icon.png",
-            "membership_level": "Silver"
+            "membership_level": "silver"
         },
         {
             "name": "Globant",
@@ -38,7 +38,15 @@
             "phone": "215854792",
             "website": "https://www.globant.com/",
             "image": "globant_icon.png",
-            "membership_level": "Silver"
+            "membership_level": "silver"
+        },
+        {
+            "name": "Punta Carretas",
+            "address": "Av. Pocitos 7255",
+            "phone": "125489635",
+            "website": "https://www.puntacarretas.com.uy/",
+            "image": "punta_carretas_icon.png",
+            "membership_level": "silver"
         },
         {
             "name": "Intermedia",
@@ -46,7 +54,15 @@
             "phone": "1845688155",
             "website": "https://intermediasoftware.com/es",
             "image": "intermedia_icon.png",
-            "membership_level": "Bronze"
+            "membership_level": "bronze"
+        },
+        {
+            "name": "Montevideo Shopping",
+            "address": "Av. Benito 4589",
+            "phone": "815548844548",
+            "website": "https://montevideoshopping.com.uy/",
+            "image": "montevideo_shopping_icon.png",
+            "membership_level": "bronze"
         },
         {
             "name": "EGA",
@@ -54,7 +70,7 @@
             "phone": "52148937",
             "website": "https://www.ega.com.uy/",
             "image": "ega_icon.png",
-            "membership_level": "Bronze"
+            "membership_level": "bronze"
         },
         {
             "name": "Abitab",
@@ -62,7 +78,7 @@
             "phone": "203258465",
             "website": "https://www.abitab.com.uy/",
             "image": "abitab_icon.png",
-            "membership_level": "none"
+            "membership_level": "basic"
         },
         {
             "name": "Geocom",
@@ -70,7 +86,15 @@
             "phone": "89214576215",
             "website": "https://www.geocom.com.uy/",
             "image": "geocom_icon.png",
-            "membership_level": "none"
+            "membership_level": "basic"
+        },
+        {
+            "name": "Disco",
+            "address": "Av. Uruguay 1258",
+            "phone": "851469726",
+            "website": "https://www.disco.com.uy/",
+            "image": "disco_icon.png",
+            "membership_level": "basic"
         }
     ]
 }
