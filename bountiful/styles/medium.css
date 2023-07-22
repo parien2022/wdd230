@@ -1,0 +1,117 @@
+@media only screen and (min-width: 37.5em) {
+
+
+    #info-footer{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    main{
+        margin: 30px;
+    }
+
+    #button{
+        top: -50px;
+    }
+
+    #fresh-img-button{
+        right: 40%;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .container-1 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .con-grapes{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .grapes-text{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .con-lemon{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .lemon-text{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+
+    .container-2 {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .con-juice{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .juice-text{
+        grid-column: 2/4;
+        grid-row: 1/2;
+    }
+
+    .weather{
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+
+
+    .carlbad-text{
+        font-size:large;
+    }
+
+    .fresh-form-title{
+        margin: 5rem 0 0 3rem;
+    }
+
+    form{
+        margin: 3rem;
+    }
+
+    .con-form{
+        flex-direction: row;
+    }
+
+    .container-4 {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+
+    .con-fruit-fresh{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    
+    .drink-summary{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    #fruit-summary1{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #fruit-summary2{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #fruit-summary3{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+
+    .container-5 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+    }
+    
+}

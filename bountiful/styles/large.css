@@ -1,0 +1,151 @@
+@media only screen and (min-width: 60.5em) {
+
+    nav {
+        margin: 0;
+    }
+    
+    .nav-ul li {
+        display: block;
+    }
+
+    .nav-ul li.nav-separator{
+        display: block;
+    }
+
+    .nav-ul li.nav-separator:hover { 
+        background-color: #ffffff;
+    }
+
+    header{
+        flex-direction: row;
+    }
+    
+    ul{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    li {
+        flex: 1 1 auto;
+    }
+
+    .facebook{
+        display: block;
+        position: absolute;
+        top: -19px;
+        right: 380px;
+        max-width: 40px;
+    }
+
+    .linkedin{
+        display: block;
+        position: absolute;
+        top: -19px;
+        right: 365px;
+        max-width: 40px;
+    }
+
+    .instagram{
+        display: block;
+        position: absolute;
+        top: -19px;
+        right: 350px;
+        max-width: 40px;
+    }
+    
+    #button{
+        display: none;
+    }
+    
+    #date{
+        display: block;
+        position: absolute;
+        text-align: center;
+        top: 50px;
+        right: 70px;
+        width: 200px;
+        border-radius: 8px;
+    }
+
+    #fresh-img-button{
+        right: 43%;
+    }
+
+    .container-1 {
+        grid-template-rows: 1fr 150px;
+    }
+
+
+    .container-3 {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 15px;
+        text-align: center;
+        margin: 20px 0 20px 0px;
+        background-color: #1F363D;
+        color: #ffffff;
+        border-radius: 8px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .con-carlsbad{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        max-height: 300px;
+        overflow: hidden;
+    }
+    .carlbad-text{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        font-size:large;
+    }
+
+
+    .container-5 {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        border: 3px solid #52AA5E;
+    }
+
+    .story{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        border: 3px solid #52AA5E;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .con-about{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .contact{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        border: 3px solid #52AA5E;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .drink-info{
+        grid-column: 1/3;
+        grid-row: 2/3;
+        border: 3px solid #52AA5E;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .location{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        border: 3px solid #52AA5E;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+}
+    

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css"/>
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="icon" href="myFavicon.ico">
+        <title>Bountiful foods Home</title>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="#" data-src="images/rsz_bountifulfoods.webp" alt="Logo image"/></a>
+            <nav>
+                <div id="menu">
+                    <a href="https://www.facebook.com" target="_blank"><img class="facebook" src="#" data-src="images/facebook.png" alt="Facebook icon"></a>
+                    <a href="https://www.linkedin.com" target="_blank"><img class="linkedin" src="#" data-src="images/linkedin.png" alt="Linkedin icon"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img class="instagram" src="#" data-src="images/instagram.png" alt="Instagram icon"></a>
+                    <button id="button">&#9776;</button>
+                </div>
+                <ul class="nav-ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="nav-separator">|</li>
+                    <li><a href="fresh.html">Fresh</a></li>
+                    <li class="nav-separator">|</li>
+                    <li><a href="aboutUs.html">About us</a></li>
+                </ul>
+            </nav>
+            <p id="date"></p>
+        </header>
+        <main>
+            <div class="main-image">
+                <img src="#" data-src="images/fruits.jpg" alt="fruits"/>
+                <a href="fresh.html"><button id="fresh-img-button">Make your own drink</button></a>
+            </div>
+            <div class="container-1">
+                <div class="con-grapes">
+                    <img src="#" data-src="images/fruit1.jpg" alt="fruits"/>
+                </div>
+                <p class="grapes-text">Moras are nutritious and delicious berries packed with antioxidants, vitamins, and minerals, promoting overall health and well-being. Their high antioxidant content helps combat oxidative stress, supporting heart health and reducing the risk of chronic diseases. Additionally, moras' fiber content aids in digestion and supports a healthy gut.</p>
+                <div class="con-lemon">
+                    <img  src="#" data-src="images/fruit2.jpg" alt="fruits"/>
+                </div>
+                <p class="lemon-text">Lemons are highly beneficial citrus fruits known for their rich vitamin C content, antioxidants, and various health-promoting properties. Their potent antioxidants combat free radicals, boost the immune system, and promote skin health. Additionally, lemons' acidity aids digestion and may support weight management.</p>
+            </div>
+
+            <div class="container-2">
+                <div class="con-juice">
+                    <img src="#" data-src="images/juice.jpg" alt="fruits"/>
+                </div>
+                <div class="juice-text"> Number of speciality drinks created so far: <span id="drink-count"></span></div>
+                <div class="weather">
+                    <h2>Weather</h2>
+                    <img id="weather-img" src="#" data-src="" alt="Weather image"/> 
+                    <h2 id="figcaption"></h2>
+                    <h2><span type="number" id="temperature"></span> °F</h2>
+                    <hr>
+                    <p>Humidity:      <span type="number" id="humidity"></span></p>
+                    <p>3 Day Forcast:      <span type="number" id="forcast"></span></p>
+                </div>
+            </div>
+
+
+            <div class="container-3">
+                <div class="con-carlsbad">
+                    <img src="#" data-src="images/carlsbad.jpg" alt="fruits"/>
+                </div>
+                <p class="carlbad-text"> Carlsbad is a charming coastal city located in northern San Diego County, Southern California. Known for its picturesque beaches, mild climate, and relaxed atmosphere, Carlsbad offers a perfect blend of coastal beauty and small-town charm. The city boasts several stunning beaches, including Carlsbad State Beach and Tamarack Beach, which attract both locals and tourists for surfing, swimming, and sunbathing. The iconic Carlsbad Village features a vibrant downtown area with a variety of shops, restaurants, and cultural attractions, making it a popular destination for leisure and relaxation. With its beautiful coastline, friendly community, and diverse recreational opportunities, Carlsbad is a sought-after coastal area that provides an idyllic California coastal experience.</p>
+            </div>
+        </main>
+        <footer>
+            <div id="info-footer">
+                <a href="index.html"><img id="footer-img" src="#" data-src="images/rsz_bountifulfoods.webp" alt="Logo image"/></a>
+                <p>Contact Info: <br> <br> info@bountifulfoods.org <br> +(123) 1234-5678 <br> &#x1F4CD; Location Map <br> Bountiful Foods <br> Av. street Carlsbad <br> CA 92008  <br> United States</p>
+            </div>
+
+            <hr>
+
+            <p class="copy">&copy Bountiful Foods | Agustin Pariente | WDD 230 Project | Last modification: <span id="LastModification"></span></p>
+        </footer>
+    </body>
+<script src="scripts/script.js"></script>
+</html>

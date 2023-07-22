@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css"/>
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="icon" href="myFavicon.ico">
+        <title>Fresh</title>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="#" data-src="images/rsz_bountifulfoods.webp" alt="Logo image"/></a>
+            <nav>
+                <div id="menu">
+                    <a href="https://www.facebook.com" target="_blank"><img class="facebook" src="#" data-src="images/facebook.png" alt="Facebook icon"></a>
+                    <a href="https://www.linkedin.com" target="_blank"><img class="linkedin" src="#" data-src="images/linkedin.png" alt="Linkedin icon"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img class="instagram" src="#" data-src="images/instagram.png" alt="Instagram icon"></a>
+                    <button id="button">&#9776;</button>
+                </div>
+                <ul class="nav-ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="nav-separator">|</li>
+                    <li><a href="fresh.html">Fresh</a></li>
+                    <li class="nav-separator">|</li>
+                    <li><a href="aboutUs.html">About us</a></li>
+                </ul>
+            </nav>
+            <p id="date"></p>
+        </header>
+        <main>
+            <div class="main-image">
+                <img src="#" data-src="images/smoothies.jpg" alt="fruits"/>
+            </div>
+            <h1 class="fresh-title">Create your own drink or smoothy mixing the fruits you most like</h1>
+            <h1 class="fresh-form-title">Drink form</h1>
+            <form id="orderForm" method="get">
+                <fieldset>
+                    <legend>Drink inventor information</legend>
+                    <label class="top">First Name*<input id="name" type="text" name="fname" required></label>
+                    <label class="top">Email*<input id="email" type="email" name="email" placeholder="name@gmail.com" required></label>
+                    <label class="top">Cell Phone Number*<input id="cel" type="tel" name="cell" required></label>
+                    <label class="top">Drink Description<textarea id="desc" name="drinkDescription"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Drink mixer</legend>
+                    <div id="levels">Please Select 3 fruits</div>
+                    <div class="con-form">
+                    <label class="side"><select class="fruit1" name="fruitSelection"></select></label>
+                    <label class="side"><select class="fruit2" name="fruitSelection"></select></label>
+                    <label class="side"><select class="fruit3" name="fruitSelection"></select></label>
+                    <label><input id="formDate" type="hidden" name="DateAndTime" value=""></label>
+                    </div>
+                </fieldset>
+                <label><input class="submitButton" type="submit" name="submitButton" value="Generate Drink"></label>
+            </form>
+            <div class="container-4">
+                <div class="con-fruit-fresh">
+                    <img src="#" data-src="images/cranberries.jpg" alt="fruits"/>
+                </div>
+                <div class="drink-summary">
+                    <h1>Summary Info</h1>
+                </div>
+                <div class="oderDate">
+                    <h2>Order date: <span class="order-date"></span></h2>
+                </div>
+            </div>
+                
+        </main>
+        <footer>
+            <div id="info-footer">
+                <a href="index.html"><img id="footer-img" src="#" data-src="images/rsz_bountifulfoods.webp" alt="Logo image"/></a>
+                <p>Contact Info: <br> <br> info@bountifulfoods.org <br> +(123) 1234-5678 <br> &#x1F4CD; Location Map <br> Bountiful Foods <br> Av. street Carlsbad <br> CA 92008  <br> United States</p>
+            </div>
+
+            <hr>
+
+            <p class="copy">&copy Bountiful Foods | Agustin Pariente | WDD 230 Project | Last modification: <span id="LastModification"></span></p>
+        </footer>
+    </body>
+<script src="scripts/script.js"></script>
+</html>
